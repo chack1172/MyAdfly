@@ -17,7 +17,7 @@ $l = [
     'adfly_url' => 'http://www.chack1172.altervista.org/Projects/MyBB-18/MyAdfly.html',
     'adfly_chack1172' => 'http://www.chack1172.altervista.org/index.php?language=english',
     'adfly_destroy' => 'Delete',
-    'wb_destroyed'  => 'The selected plugin has been uninstalled and deleted successfully.',
+    'adfly_destroyed'  => 'The selected plugin has been uninstalled and deleted successfully.',
     'setting_group_myadfly'      => 'MyAdfly',
     'setting_group_myadfly_desc' => 'Settings for plugin MyAdfly.',
     'setting_adfly_id'      => 'User ID',

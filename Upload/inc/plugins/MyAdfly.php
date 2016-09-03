@@ -161,6 +161,7 @@ function MyAdfly_destroy()
     global $mybb, $message, $lang;
     
     if ($mybb->input['destroy'] == 1) {
+		MyAdfly_lang();
         // extra files and dirs to remove
         $extra_files = [
             'inc/languages/english/admin/MyAdfly.lang.php',
@@ -168,11 +169,11 @@ function MyAdfly_destroy()
         ];
         
         foreach ($extra_files as $file) {
-            if (!file_exists(MyBB_ROOT.$file) || is_dir(MyBB_ROOT.$file)) {
+            if (!file_exists(MYBB_ROOT.$file) || is_dir(MYBB_ROOT.$file)) {
                 continue;
             }
             
-            unlink(MyBB_ROOT.$file);
+            unlink(MYBB_ROOT.$file);
         }
         unlink(__FILE__);
         
